@@ -35,8 +35,13 @@ public partial class App : Application
             ToolTipText = "Monitor Portow"
         };
 
-        // Use default app icon
-        _trayIcon.Icon = System.Drawing.SystemIcons.Application;
+        // Load app icon from embedded resource
+        var iconUri = new Uri("pack://application:,,,/Resources/app.ico", UriKind.Absolute);
+        using var stream = GetResourceStream(iconUri)?.Stream;
+        if (stream is not null)
+            _trayIcon.Icon = new System.Drawing.Icon(stream);
+        else
+            _trayIcon.Icon = System.Drawing.SystemIcons.Application;
 
         _trayIcon.TrayMouseDoubleClick += (_, _) => ShowMainWindow();
 

@@ -15,7 +15,7 @@ ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 WizardStyle=modern
 PrivilegesRequired=lowest
-; SetupIconFile=..\src\PortMonitor\Resources\app.ico
+SetupIconFile=..\src\PortMonitor\Resources\app.ico
 
 [Languages]
 Name: "polish"; MessagesFile: "compiler:Languages\Polish.isl"
