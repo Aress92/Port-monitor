@@ -9,6 +9,14 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
         DataContext = viewModel;
+
+        try
+        {
+            Icon = new System.Windows.Media.Imaging.BitmapImage(
+                new Uri("pack://application:,,,/Resources/app.ico", UriKind.Absolute));
+        }
+        catch { /* fallback: no icon */ }
+
         Loaded += async (_, _) => await viewModel.RefreshCommand.ExecuteAsync(null);
     }
 

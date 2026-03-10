@@ -5,7 +5,6 @@
         Title="Monitor Portow" Height="600" Width="900"
         MinHeight="400" MinWidth="700"
         WindowStartupLocation="CenterScreen"
-        Icon="Resources/app.ico"
         Closing="Window_Closing">
     <Window.Resources>
         <converters:StatusToBrushConverter x:Key="StatusToBrush"/>
