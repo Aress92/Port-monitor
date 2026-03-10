@@ -26,3 +26,6 @@ __pycache__/
 *.pyo
 publish/
 output/
+
+## Claude Code
+.claude/
