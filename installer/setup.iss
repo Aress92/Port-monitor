@@ -4,7 +4,7 @@ AppName=Monitor Portow
 AppVersion=1.0.0
 AppPublisher=Port Monitor
 AppPublisherURL=https://github.com
-DefaultDirName={autopf}\MonitorPortow
+DefaultDirName={commonpf32}\MonitorPortow
 DefaultGroupName=Monitor Portow
 UninstallDisplayIcon={app}\PortMonitor.exe
 OutputDir=..\output
@@ -14,7 +14,7 @@ SolidCompression=yes
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 WizardStyle=modern
-PrivilegesRequired=lowest
+PrivilegesRequired=admin
 SetupIconFile=..\src\PortMonitor\Resources\app.ico
 
 [Languages]
